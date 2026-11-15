@@ -1,19 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textTytul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Domek w górach"
+        android:textSize="30sp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/houseImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/obraz"
+        android:scaleType="centerCrop"
+        android:contentDescription="Domek w górach"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#008080">
+
+        <Button
+            android:id="@+id/buttonLike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="POLUB"
+            android:textColor="@color/white"
+            android:backgroundTint="#008080"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="USUŃ"
+            android:textColor="@color/white"
+            android:backgroundTint="#008080"/>
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ZAPISZ"
+            android:textColor="@color/white"
+            android:backgroundTint="#008080"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textLike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 polubień"
+        android:gravity="end"
+        android:padding="8dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#808080"/>
+
+    <TextView
+        android:id="@+id/textTytulOpis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opis"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textOpis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odwiedź komfortowy domek w sudetach, blisko do szlaków turystycznych"/>
+
+</LinearLayout>
