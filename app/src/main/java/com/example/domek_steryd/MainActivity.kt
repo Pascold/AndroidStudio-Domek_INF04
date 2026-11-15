@@ -20,7 +20,17 @@ class MainActivity : AppCompatActivity() {
 
         var likes = 0
 
+        buttonLike.setOnClickListener {
+            likes++
+            textLike.text = "$likes polubień"
+        }
 
+        buttonDelete.setOnClickListener {
+            if (likes > 0) {
+                likes --
+            }
+            textLike.text = "$likes polubień"
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
