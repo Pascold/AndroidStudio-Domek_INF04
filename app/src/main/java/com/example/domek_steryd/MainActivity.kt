@@ -14,7 +14,9 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        
+        val buttonLike = findViewById<Button>(R.id.buttonLike)
+        val buttonDelete = findViewById<Button>(R.id.buttonDelete)
+        val textLike = findViewById<TextView>(R.id.textLike)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
