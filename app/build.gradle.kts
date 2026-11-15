@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.domek_steryd"
+    namespace = "com.example.domek_inf04"
     compileSdk {
-        version = release(36) {
+        version = release(37) {
             minorApiLevel = 1
         }
     }
 
     defaultConfig {
-        applicationId = "com.example.domek_steryd"
+        applicationId = "com.example.domek_inf04"
         minSdk = 23
         targetSdk = 36
         versionCode = 1

@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "domek_steryd"
+rootProject.name = "AndroidStudio-Domek_INF04"
 include(":app")

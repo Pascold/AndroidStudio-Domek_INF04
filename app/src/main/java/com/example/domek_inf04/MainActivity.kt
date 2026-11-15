@@ -1,4 +1,4 @@
-package com.example.domek_steryd
+package com.example.domek_inf04
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
